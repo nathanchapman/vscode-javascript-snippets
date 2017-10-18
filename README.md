@@ -2,9 +2,7 @@
 
 ## Snippets
 
-Snippets are optimized to be short and easy to remember. Some snippets are "chainable" and render differently when preceded by a [period](https://en.wikipedia.org/wiki/Full_stop).
-
-For example, `.fe` renders a chain-friendly version of the "forEach" snippet, while `fe` renders a full code block.
+Snippets are optimized to be short and easy to remember.
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
@@ -231,35 +229,35 @@ function* ${1:name}(${2:arguments}) {
 [...Array(${1:length}).keys()]${0}
 ```
 
-#### `fe⇥` forEach loop (chainable)
+#### `fe⇥` forEach loop
 ```javascript
 ${1:iterable}.forEach((${2:item}) => {
 	${0}
 });
 ```
 
-#### `map⇥` map (chainable)
+#### `map⇥` map
 ```javascript
 ${1:iterable}.map((${2:item}) => {
 	${0}
 });
 ```
 
-#### `reduce⇥` reduce (chainable)
+#### `reduce⇥` reduce
 ```javascript
 ${1:iterable}.reduce((${2:previous}, ${3:current}) => {
 	${0}
 }${4:, initial});
 ```
 
-#### `filter⇥` filter (chainable)
+#### `filter⇥` filter
 ```javascript
 ${1:iterable}.filter(${2:item} => {
 	${0}
 });
 ```
 
-#### `find⇥` find (chainable)
+#### `find⇥` find
 ```javascript
 ${1:iterable}.find(${2:item} => {
 	${0}
@@ -349,7 +347,7 @@ var ${1:Class} = function(${2:arguments}) {
 };
 ```
 
-#### `proto⇥` prototype method (chainable)
+#### `proto⇥` prototype method
 ```javascript
 ${1:Class}.prototype.${2:method} = function(${3:arguments}) {
 	${0}
@@ -405,14 +403,14 @@ new Promise((resolve, reject) => {
 })
 ```
 
-#### `then⇥` Promise.then (chainable)
+#### `then⇥` Promise.then
 ```javascript
 ${1:promise}.then((${2:value}) => {
 	${0}
 })
 ```
 
-#### `catch⇥` Promise.catch (chainable)
+#### `catch⇥` Promise.catch
 ```javascript
 ${1:promise}.catch((${2:err}) => {
 	${0}
@@ -478,7 +476,7 @@ module.exports = {
 };
 ```
 
-#### `on⇥` event handler (chainable)
+#### `on⇥` event handler
 ```javascript
 ${1:emitter}.on('${2:event}', (${3:arguments}) => {
 	${0}
