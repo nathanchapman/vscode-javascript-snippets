@@ -6,7 +6,7 @@
     },
     "var assignment": {
         "prefix": "v=",
-        "body": "var ${0:name} = ${1:value};"
+        "body": "var ${1:name} = ${2:value};"
     },
     "let statement": {
         "prefix": "l",
@@ -14,11 +14,11 @@
     },
     "let assignment": {
         "prefix": "l=",
-        "body": "let ${0:name} = ${1:value};"
+        "body": "let ${1:name} = ${2:value};"
     },
     "destructuring let assignment": {
         "prefix": "dl=",
-        "body": "let {${0:name}} = ${1:value};"
+        "body": "let {${1:name}} = ${2:value};"
     },
     "const statement": {
         "prefix": "co",
@@ -26,11 +26,11 @@
     },
     "const assignment": {
         "prefix": "co=",
-        "body": "const ${0:name} = ${1:value};"
+        "body": "const ${1:name} = ${2:value};"
     },
     "destructuring const assignment": {
         "prefix": "dco=",
-        "body": "const {${0:name}} = ${1:value};"
+        "body": "const {${1:name}} = ${2:value};"
     },
     // Flow Control
     "if statement": {

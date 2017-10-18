@@ -16,7 +16,7 @@ var ${0}
 
 #### `v=⇥` var assignment
 ```javascript
-var ${0:name} = ${1:value};
+var ${1:name} = ${2:value};
 ```
 
 #### `l⇥` let statement
@@ -26,12 +26,12 @@ let ${0}
 
 #### `l=⇥` let assignment
 ```javascript
-let ${0:name} = ${1:value};
+let ${1:name} = ${2:value};
 ```
 
 #### `dl=⇥` destructuring let assignment
 ```javascript
-let {${0:name}} = ${1:value};
+let {${1:name}} = ${2:value};
 ```
 
 #### `co⇥` const statement
@@ -41,12 +41,12 @@ const ${0}
 
 #### `co=⇥` const assignment
 ```javascript
-const ${0:name} = ${1:value};
+const ${1:name} = ${2:value};
 ```
 
 #### `dco=⇥` destructuring const assignment
 ```javascript
-const {${0:name}} = ${1:value};
+const {${1:name}} = ${2:value};
 ```
 
 ### Flow Control
