@@ -1,7 +1,7 @@
 {
     "name": "JavaScriptSnippets",
     "description": "JavaScript (ES6) code snippets for VS Code",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "displayName": "JavaScript Snippets",
     "publisher": "nathanchapman",
     "icon": "images/javascript.png",
