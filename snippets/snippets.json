@@ -137,23 +137,23 @@
     },
     "forEach loop": {
         "prefix": "fe",
-        "body": "${1:iterable}.forEach((${2:item}) => {\n\t${0}\n});"
+        "body": "${1}.forEach((${2:item}) => {\n\t${0}\n});"
     },
     "map": {
         "prefix": "map",
-        "body": "${1:iterable}.map((${2:item}) => {\n\t${0}\n});"
+        "body": "${1}.map((${2:item}) => {\n\t${0}\n});"
     },
     "reduce": {
         "prefix": "reduce",
-        "body": "${1:iterable}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial});"
+        "body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial});"
     },
     "filter": {
         "prefix": "filter",
-        "body": "${1:iterable}.filter(${2:item} => {\n\t${0}\n});"
+        "body": "${1}.filter(${2:item} => {\n\t${0}\n});"
     },
     "find": {
         "prefix": "find",
-        "body": "${1:iterable}.find(${2:item} => {\n\t${0}\n});"
+        "body": "${1}.find(${2:item} => {\n\t${0}\n});"
     },
     // Objects and Classes
     "object literal": {
@@ -337,14 +337,26 @@
     // Console
     "console.log": {
         "prefix": "cl",
-        "body": "console.log('${0}', ${0});"
+        "body": "console.log(${0});"
     },
     "console.error": {
         "prefix": "ce",
-        "body": "console.error('${0}', ${0});"
+        "body": "console.error(${0});"
     },
     "console.warn": {
         "prefix": "cw",
+        "body": "console.warn(${0});"
+    },
+    "console.log labeled": {
+        "prefix": "cll",
+        "body": "console.log('${0}', ${0});"
+    },
+    "console.error labeled": {
+        "prefix": "cel",
+        "body": "console.error('${0}', ${0});"
+    },
+    "console.warn labeled": {
+        "prefix": "cwl",
         "body": "console.warn('${0}', ${0});"
     },
     // Timers

@@ -235,35 +235,35 @@ function* ${1:name}(${2:arguments}) {
 
 #### `fe⇥` forEach loop
 ```javascript
-${1:iterable}.forEach((${2:item}) => {
+${1}.forEach((${2:item}) => {
 	${0}
 });
 ```
 
 #### `map⇥` map
 ```javascript
-${1:iterable}.map((${2:item}) => {
+${1}.map((${2:item}) => {
 	${0}
 });
 ```
 
 #### `reduce⇥` reduce
 ```javascript
-${1:iterable}.reduce((${2:previous}, ${3:current}) => {
+${1}.reduce((${2:previous}, ${3:current}) => {
 	${0}
 }${4:, initial});
 ```
 
 #### `filter⇥` filter
 ```javascript
-${1:iterable}.filter(${2:item} => {
+${1}.filter(${2:item} => {
 	${0}
 });
 ```
 
 #### `find⇥` find
 ```javascript
-${1:iterable}.find(${2:item} => {
+${1}.find(${2:item} => {
 	${0}
 });
 ```
@@ -555,15 +555,30 @@ afterEach(() => {
 ### Console
 #### `cl⇥` console.log
 ```javascript
-console.log('${0}', ${0});
+console.log(${0});
 ```
 
 #### `ce⇥` console.error
 ```javascript
-console.error('${0}', ${0});
+console.error(${0});
 ```
 
 #### `cw⇥` console.warn
+```javascript
+console.warn(${0});
+```
+
+#### `cll⇥` console.log labeled
+```javascript
+console.log('${0}', ${0});
+```
+
+#### `cel⇥` console.error labeled
+```javascript
+console.error('${0}', ${0});
+```
+
+#### `cwl⇥` console.warn labeled
 ```javascript
 console.warn('${0}', ${0});
 ```
