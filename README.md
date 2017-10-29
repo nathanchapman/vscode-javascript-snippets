@@ -4,6 +4,9 @@
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/nathanchapman.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets)
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/nathanchapman.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets)
 
+## Setup
+
+Just install this package from the Extension Marketplace, then make sure to add `"editor.snippetSuggestions": "top"` to your user settings to see these snippets on top in the suggestion popover.
 
 ## Snippets
 
