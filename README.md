@@ -4,6 +4,7 @@
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/nathanchapman.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets)
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/nathanchapman.JavaScriptSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets)
 
+
 ## Snippets
 
 Snippets are optimized to be short and easy to remember.
