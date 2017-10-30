@@ -457,14 +457,29 @@ import ${1:*} as ${2:name} from '${3:module}';
 require('${1:module}');
 ```
 
+#### `rel⇥` require local
+```javascript
+require('./${1:module}');
+```
+
 #### `req⇥` require assignment
 ```javascript
 const ${1:module} = require('${1:module}');
 ```
 
+#### `reql⇥` require assignment local
+```javascript
+const ${1:module} = require('./${1:module}');
+```
+
 #### `dreq⇥` destructuring require assignment
 ```javascript
 const {${1:module}} = require('${1:module}');
+```
+
+#### `dreql⇥` destructuring require assignment local
+```javascript
+const {${1:module}} = require('./${1:module}');
 ```
 
 #### `em⇥` exports.member

@@ -273,13 +273,25 @@
         "prefix": "re",
         "body": "require('${1:module}');"
     },
+    "require local": {
+        "prefix": "rel",
+        "body": "require('./${1:module}');"
+    },
     "require assignment": {
         "prefix": "req",
         "body": "const ${1:module} = require('${1:module}');"
     },
+    "require assignment local": {
+        "prefix": "reql",
+        "body": "const ${1:module} = require('./${1:module}');"
+    },
     "destructuring require assignment": {
         "prefix": "dreq",
         "body": "const {${1:module}} = require('${1:module}');"
+    },
+    "destructuring require assignment local": {
+        "prefix": "dreql",
+        "body": "const {${1:module}} = require('./${1:module}');"
     },
     "exports.member": {
         "prefix": "em",
