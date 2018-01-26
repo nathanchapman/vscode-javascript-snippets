@@ -22,7 +22,7 @@ var ${0}
 
 #### `v=⇥` var assignment
 ```javascript
-var ${1:name} = ${2:value};
+var ${1:name} = ${2:value};${0}
 ```
 
 #### `l⇥` let statement
@@ -32,12 +32,12 @@ let ${0}
 
 #### `l=⇥` let assignment
 ```javascript
-let ${1:name} = ${2:value};
+let ${1:name} = ${2:value};${0}
 ```
 
 #### `dl=⇥` destructuring let assignment
 ```javascript
-let {${1:name}} = ${2:value};
+let {${1:name}} = ${2:value};${0}
 ```
 
 #### `co⇥` const statement
@@ -47,12 +47,12 @@ const ${0}
 
 #### `co=⇥` const assignment
 ```javascript
-const ${1:name} = ${2:value};
+const ${1:name} = ${2:value};${0}
 ```
 
 #### `dco=⇥` destructuring const assignment
 ```javascript
-const {${1:name}} = ${2:value};
+const {${1:name}} = ${2:value};${0}
 ```
 
 ### Flow Control
@@ -162,9 +162,9 @@ try {
 ```javascript
 switch (${1:expr}) {
 	case ${2:value}:
-		return $0;
+		break $0;
 	default:
-		return;
+		break;
 }
 ```
 
@@ -239,37 +239,37 @@ function* ${1:name}(${2:arguments}) {
 
 #### `fe⇥` forEach loop
 ```javascript
-${1}.forEach((${2:item}) => {
-	${0}
-});
+forEach((${1:item}) => {
+	${2}
+});${0}
 ```
 
 #### `map⇥` map
 ```javascript
-${1}.map((${2:item}) => {
-	${0}
-});
+map((${1:item}) => {
+	${2}
+})${0}
 ```
 
 #### `reduce⇥` reduce
 ```javascript
-${1}.reduce((${2:previous}, ${3:current}) => {
-	${0}
-}${4:, initial});
+reduce((${1:previous}, ${2:current}) => {
+	${4}
+}${3:, initial})${0}
 ```
 
 #### `filter⇥` filter
 ```javascript
-${1}.filter(${2:item} => {
-	${0}
-});
+filter(${1:item} => {
+	${2}
+})${0}
 ```
 
 #### `find⇥` find
 ```javascript
-${1}.find(${2:item} => {
-	${0}
-});
+find(${1:item} => {
+	${2}
+})${0}
 ```
 
 ### Objects and Classes
@@ -277,12 +277,12 @@ ${1}.find(${2:item} => {
 ```javascript
 {
 	kv${0}
-};
+}
 ```
 
 #### `slol⇥` same-line object literal
 ```javascript
-{ kv${0} };
+{ kv${0} }
 ```
 
 #### `kv⇥` key/value pair
@@ -428,22 +428,22 @@ ${1:promise}.catch((${2:err}) => {
 ### ES6 Modules
 #### `ex⇥` export (ES6)
 ```javascript
-export ${1:member};
+export ${1:member}${0}
 ```
 
 #### `exd⇥` export default (ES6)
 ```javascript
-export default ${1:member};
+export default ${1:member}${0}
 ```
 
 #### `im⇥` import module (ES6)
 ```javascript
-import ${1:*} from '${2:module}';
+import ${2:*} from '${1:module}';${0}
 ```
 
 #### `ima⇥` import module as (ES6)
 ```javascript
-import ${1:*} as ${2:name} from '${3:module}';
+import ${2:*} as ${3:name} from '${1:module}';${0}
 ```
 
 ### Node.js
@@ -454,49 +454,49 @@ import ${1:*} as ${2:name} from '${3:module}';
 
 #### `re⇥` require
 ```javascript
-require('${1:module}');
+require('${1:module}');${0}
 ```
 
 #### `rel⇥` require local
 ```javascript
-require('./${1:module}');
+require('./${1:module}');${0}
 ```
 
 #### `req⇥` require assignment
 ```javascript
-const ${1:module} = require('${1:module}');
+const ${2:module} = require('${1:module}');${0}
 ```
 
 #### `reql⇥` require assignment local
 ```javascript
-const ${1:module} = require('./${1:module}');
+const ${2:module} = require('./${1:module}');${0}
 ```
 
 #### `dreq⇥` destructuring require assignment
 ```javascript
-const {${1:module}} = require('${1:module}');
+const {${2:module}} = require('${1:module}');${0}
 ```
 
 #### `dreql⇥` destructuring require assignment local
 ```javascript
-const {${1:module}} = require('./${1:module}');
+const {${2:module}} = require('./${1:module}');${0}
 ```
 
 #### `em⇥` exports.member
 ```javascript
-exports.${1:member} = ${2:value};
+exports.${1:member} = ${2:value};${0}
 ```
 
 #### `me⇥` module.exports
 ```javascript
-module.exports = ${1:name};
+module.exports = ${1:name};${0}
 ```
 
 #### `meo⇥` module exports object
 ```javascript
 module.exports = {
 	${1:member}
-};
+};${0}
 ```
 
 #### `on⇥` event handler
@@ -574,54 +574,54 @@ afterEach(() => {
 ### Console
 #### `cl⇥` console.log
 ```javascript
-console.log(${0});
+console.log(${1})${0}
 ```
 
 #### `ce⇥` console.error
 ```javascript
-console.error(${0});
+console.error(${1})${0}
 ```
 
 #### `cw⇥` console.warn
 ```javascript
-console.warn(${0});
+console.warn(${1})${0}
 ```
 
 #### `cll⇥` console.log labeled
 ```javascript
-console.log('${0}', ${0});
+console.log('${1}', ${1})${0}
 ```
 
 #### `cel⇥` console.error labeled
 ```javascript
-console.error('${0}', ${0});
+console.error('${1}', ${1})${0}
 ```
 
 #### `cwl⇥` console.warn labeled
 ```javascript
-console.warn('${0}', ${0});
+console.warn('${1}', ${1})${0}
 ```
 
 ### Timers
 #### `st⇥` setTimeout
 ```javascript
-setTimeout(() => {
+setTimeout((${2}) => {
 	${0}
 }, ${1:delay});
 ```
 
 #### `si⇥` setInterval
 ```javascript
-setInterval(() => {
+setInterval((${2}) => {
 	${0}
 }, ${1:delay});
 ```
 
 #### `sim⇥` setImmediate
 ```javascript
-setImmediate(() => {
+setImmediate((${2}) => {
 	${0}
-});
+}${1});
 ```
 
 #### `nt⇥` process nextTick
