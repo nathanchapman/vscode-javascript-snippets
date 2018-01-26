@@ -248,28 +248,28 @@ ${1}.forEach((${2:item}) => {
 ```javascript
 ${1}.map((${2:item}) => {
 	${3}
-});${0}
+})${0}
 ```
 
 #### `reduce⇥` reduce
 ```javascript
 ${1}.reduce((${2:previous}, ${3:current}) => {
 	${5}
-}${4:, initial});${0}
+}${4:, initial})${0}
 ```
 
 #### `filter⇥` filter
 ```javascript
 ${1}.filter(${2:item} => {
 	${3}
-});${0}
+})${0}
 ```
 
 #### `find⇥` find
 ```javascript
 ${1}.find(${2:item} => {
 	${3}
-});${0}
+})${0}
 ```
 
 ### Objects and Classes
@@ -277,12 +277,12 @@ ${1}.find(${2:item} => {
 ```javascript
 {
 	kv${0}
-};
+}
 ```
 
 #### `slol⇥` same-line object literal
 ```javascript
-{ kv${0} };
+{ kv${0} }
 ```
 
 #### `kv⇥` key/value pair
@@ -428,12 +428,12 @@ ${1:promise}.catch((${2:err}) => {
 ### ES6 Modules
 #### `ex⇥` export (ES6)
 ```javascript
-export ${1:member};${0}
+export ${1:member}${0}
 ```
 
 #### `exd⇥` export default (ES6)
 ```javascript
-export default ${1:member};${0}
+export default ${1:member}${0}
 ```
 
 #### `im⇥` import module (ES6)
@@ -574,32 +574,32 @@ afterEach(() => {
 ### Console
 #### `cl⇥` console.log
 ```javascript
-console.log(${1});${0}
+console.log(${1})${0}
 ```
 
 #### `ce⇥` console.error
 ```javascript
-console.error(${1});${0}
+console.error(${1})${0}
 ```
 
 #### `cw⇥` console.warn
 ```javascript
-console.warn(${1});${0}
+console.warn(${1})${0}
 ```
 
 #### `cll⇥` console.log labeled
 ```javascript
-console.log('${1}', ${1});${0}
+console.log('${1}', ${1})${0}
 ```
 
 #### `cel⇥` console.error labeled
 ```javascript
-console.error('${1}', ${1});${0}
+console.error('${1}', ${1})${0}
 ```
 
 #### `cwl⇥` console.warn labeled
 ```javascript
-console.warn('${1}', ${1});${0}
+console.warn('${1}', ${1})${0}
 ```
 
 ### Timers

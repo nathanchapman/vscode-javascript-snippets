@@ -175,33 +175,33 @@
     },
     "map": {
         "prefix": "map",
-        "body": "${1}.map((${2:item}) => {\n\t${3}\n});${0}",
+        "body": "${1}.map((${2:item}) => {\n\t${3}\n})${0}",
         "description": "map"
     },
     "reduce": {
         "prefix": "reduce",
-        "body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${5}\n}${4:, initial});${0}",
+        "body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${5}\n}${4:, initial})${0}",
         "description": "reduce"
     },
     "filter": {
         "prefix": "filter",
-        "body": "${1}.filter(${2:item} => {\n\t${3}\n});${0}",
+        "body": "${1}.filter(${2:item} => {\n\t${3}\n})${0}",
         "description": "filter"
     },
     "find": {
         "prefix": "find",
-        "body": "${1}.find(${2:item} => {\n\t${3}\n});${0}",
+        "body": "${1}.find(${2:item} => {\n\t${3}\n})${0}",
         "description": "find"
     },
     // Objects and Classes
     "object literal": {
         "prefix": "ol",
-        "body": "{\n\tkv${0}\n};",
+        "body": "{\n\tkv${0}\n}${0}",
         "description": "object literal"
     },
     "same-line object literal": {
         "prefix": "slol",
-        "body": "{ kv${0} };",
+        "body": "{ kv${0} }${0}",
         "description": "same-line object literal"
     },
     "key/value pair": {
@@ -310,12 +310,12 @@
     // ES6 Modules
     "export (ES6)": {
         "prefix": "ex",
-        "body": "export ${1:member};${0}",
+        "body": "export ${1:member}${0}",
         "description": "export (ES6)"
     },
     "export default (ES6)": {
         "prefix": "exd",
-        "body": "export default ${1:member};${0}",
+        "body": "export default ${1:member}${0}",
         "description": "export default (ES6)"
     },
     "import module (ES6)": {
@@ -433,32 +433,32 @@
     // Console
     "console.log": {
         "prefix": "cl",
-        "body": "console.log(${1});${0}",
+        "body": "console.log(${1})${0}",
         "description": "console.log"
     },
     "console.error": {
         "prefix": "ce",
-        "body": "console.error(${1});${0}",
+        "body": "console.error(${1})${0}",
         "description": "console.error"
     },
     "console.warn": {
         "prefix": "cw",
-        "body": "console.warn(${1});${0}",
+        "body": "console.warn(${1})${0}",
         "description": "console.warn"
     },
     "console.log labeled": {
         "prefix": "cll",
-        "body": "console.log('${1}', ${1});${0}",
+        "body": "console.log('${1}', ${1})${0}",
         "description": "console.log labeled"
     },
     "console.error labeled": {
         "prefix": "cel",
-        "body": "console.error('${1}', ${1});${0}",
+        "body": "console.error('${1}', ${1})${0}",
         "description": "console.error labeled"
     },
     "console.warn labeled": {
         "prefix": "cwl",
-        "body": "console.warn('${1}', ${1});${0}",
+        "body": "console.warn('${1}', ${1})${0}",
         "description": "console.warn labeled"
     },
     // Timers
