@@ -162,9 +162,9 @@ try {
 ```javascript
 switch (${1:expr}) {
 	case ${2:value}:
-		return $0;
+		break $0;
 	default:
-		return;
+		break;
 }
 ```
 
@@ -239,36 +239,36 @@ function* ${1:name}(${2:arguments}) {
 
 #### `fe⇥` forEach loop
 ```javascript
-${1}.forEach((${2:item}) => {
-	${3}
+forEach((${1:item}) => {
+	${2}
 });${0}
 ```
 
 #### `map⇥` map
 ```javascript
-${1}.map((${2:item}) => {
-	${3}
+map((${1:item}) => {
+	${2}
 })${0}
 ```
 
 #### `reduce⇥` reduce
 ```javascript
-${1}.reduce((${2:previous}, ${3:current}) => {
-	${5}
-}${4:, initial})${0}
+reduce((${1:previous}, ${2:current}) => {
+	${4}
+}${3:, initial})${0}
 ```
 
 #### `filter⇥` filter
 ```javascript
-${1}.filter(${2:item} => {
-	${3}
+filter(${1:item} => {
+	${2}
 })${0}
 ```
 
 #### `find⇥` find
 ```javascript
-${1}.find(${2:item} => {
-	${3}
+find(${1:item} => {
+	${2}
 })${0}
 ```
 

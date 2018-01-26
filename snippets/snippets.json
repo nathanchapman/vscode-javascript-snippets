@@ -108,7 +108,7 @@
     },
     "switch case": {
         "prefix": "sw",
-        "body": "switch (${1:expr}) {\n\tcase ${2:value}:\n\t\treturn $0;\n\tdefault:\n\t\treturn;\n}",
+        "body": "switch (${1:expr}) {\n\tcase ${2:value}:\n\t\tbreak $0;\n\tdefault:\n\t\tbreak;\n}",
         "description": "switch case"
     },
     // Functions
@@ -170,27 +170,27 @@
     },
     "forEach loop": {
         "prefix": "fe",
-        "body": "${1}.forEach((${2:item}) => {\n\t${3}\n});${0}",
+        "body": "forEach((${1:item}) => {\n\t${2}\n});${0}",
         "description": "forEach loop"
     },
     "map": {
         "prefix": "map",
-        "body": "${1}.map((${2:item}) => {\n\t${3}\n})${0}",
+        "body": "map((${1:item}) => {\n\t${2}\n})${0}",
         "description": "map"
     },
     "reduce": {
         "prefix": "reduce",
-        "body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${5}\n}${4:, initial})${0}",
+        "body": "reduce((${1:previous}, ${2:current}) => {\n\t${4}\n}${3:, initial})${0}",
         "description": "reduce"
     },
     "filter": {
         "prefix": "filter",
-        "body": "${1}.filter(${2:item} => {\n\t${3}\n})${0}",
+        "body": "filter(${1:item} => {\n\t${2}\n})${0}",
         "description": "filter"
     },
     "find": {
         "prefix": "find",
-        "body": "${1}.find(${2:item} => {\n\t${3}\n})${0}",
+        "body": "find(${1:item} => {\n\t${2}\n})${0}",
         "description": "find"
     },
     // Objects and Classes
@@ -299,12 +299,12 @@
     },
     "Promise.then": {
         "prefix": "then",
-        "body": "${1:promise}.then((${2:value}) => {\n\t${0}\n})",
+        "body": "then((${1:value}) => {\n\t${0}\n})",
         "description": "Promise.then"
     },
     "Promise.catch": {
         "prefix": "catch",
-        "body": "${1:promise}.catch((${2:err}) => {\n\t${0}\n})",
+        "body": "catch((${1:err}) => {\n\t${0}\n})",
         "description": "Promise.catch"
     },
     // ES6 Modules
