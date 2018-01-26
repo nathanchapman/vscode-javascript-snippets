@@ -7,7 +7,7 @@
     },
     "var assignment": {
         "prefix": "v=",
-        "body": "var ${1:name} = ${2:value};",
+        "body": "var ${1:name} = ${2:value};${0}",
         "description": "var assignment"
     },
     "let statement": {
@@ -17,12 +17,12 @@
     },
     "let assignment": {
         "prefix": "l=",
-        "body": "let ${1:name} = ${2:value};",
+        "body": "let ${1:name} = ${2:value};${0}",
         "description": "let assignment"
     },
     "destructuring let assignment": {
         "prefix": "dl=",
-        "body": "let {${1:name}} = ${2:value};",
+        "body": "let {${1:name}} = ${2:value};${0}",
         "description": "destructuring let assignment"
     },
     "const statement": {
@@ -32,12 +32,12 @@
     },
     "const assignment": {
         "prefix": "co=",
-        "body": "const ${1:name} = ${2:value};",
+        "body": "const ${1:name} = ${2:value};${0}",
         "description": "const assignment"
     },
     "destructuring const assignment": {
         "prefix": "dco=",
-        "body": "const {${1:name}} = ${2:value};",
+        "body": "const {${1:name}} = ${2:value};${0}",
         "description": "destructuring const assignment"
     },
     // Flow Control
@@ -170,27 +170,27 @@
     },
     "forEach loop": {
         "prefix": "fe",
-        "body": "${1}.forEach((${2:item}) => {\n\t${0}\n});",
+        "body": "${1}.forEach((${2:item}) => {\n\t${3}\n});${0}",
         "description": "forEach loop"
     },
     "map": {
         "prefix": "map",
-        "body": "${1}.map((${2:item}) => {\n\t${0}\n});",
+        "body": "${1}.map((${2:item}) => {\n\t${3}\n});${0}",
         "description": "map"
     },
     "reduce": {
         "prefix": "reduce",
-        "body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial});",
+        "body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${5}\n}${4:, initial});${0}",
         "description": "reduce"
     },
     "filter": {
         "prefix": "filter",
-        "body": "${1}.filter(${2:item} => {\n\t${0}\n});",
+        "body": "${1}.filter(${2:item} => {\n\t${3}\n});${0}",
         "description": "filter"
     },
     "find": {
         "prefix": "find",
-        "body": "${1}.find(${2:item} => {\n\t${0}\n});",
+        "body": "${1}.find(${2:item} => {\n\t${3}\n});${0}",
         "description": "find"
     },
     // Objects and Classes
@@ -310,22 +310,22 @@
     // ES6 Modules
     "export (ES6)": {
         "prefix": "ex",
-        "body": "export ${1:member};",
+        "body": "export ${1:member};${0}",
         "description": "export (ES6)"
     },
     "export default (ES6)": {
         "prefix": "exd",
-        "body": "export default ${1:member};",
+        "body": "export default ${1:member};${0}",
         "description": "export default (ES6)"
     },
     "import module (ES6)": {
         "prefix": "im",
-        "body": "import ${1:*} from '${2:module}';",
+        "body": "import ${2:*} from '${1:module}';${0}",
         "description": "import module (ES6)"
     },
     "import module as (ES6)": {
         "prefix": "ima",
-        "body": "import ${1:*} as ${2:name} from '${3:module}';",
+        "body": "import ${2:*} as ${3:name} from '${1:module}';${0}",
         "description": "import module as (ES6)"
     },
     // Node.js
@@ -336,47 +336,47 @@
     },
     "require": {
         "prefix": "re",
-        "body": "require('${1:module}');",
+        "body": "require('${1:module}');${0}",
         "description": "require"
     },
     "require local": {
         "prefix": "rel",
-        "body": "require('./${1:module}');",
+        "body": "require('./${1:module}');${0}",
         "description": "require local"
     },
     "require assignment": {
         "prefix": "req",
-        "body": "const ${1:module} = require('${1:module}');",
+        "body": "const ${2:module} = require('${1:module}');${0}",
         "description": "require assignment"
     },
     "require assignment local": {
         "prefix": "reql",
-        "body": "const ${1:module} = require('./${1:module}');",
+        "body": "const ${2:module} = require('./${1:module}');${0}",
         "description": "require assignment local"
     },
     "destructuring require assignment": {
         "prefix": "dreq",
-        "body": "const {${1:module}} = require('${1:module}');",
+        "body": "const {${2:module}} = require('${1:module}');${0}",
         "description": "destructuring require assignment"
     },
     "destructuring require assignment local": {
         "prefix": "dreql",
-        "body": "const {${1:module}} = require('./${1:module}');",
+        "body": "const {${2:module}} = require('./${1:module}');${0}",
         "description": "destructuring require assignment local"
     },
     "exports.member": {
         "prefix": "em",
-        "body": "exports.${1:member} = ${2:value};",
+        "body": "exports.${1:member} = ${2:value};${0}",
         "description": "exports.member"
     },
     "module.exports": {
         "prefix": "me",
-        "body": "module.exports = ${1:name};",
+        "body": "module.exports = ${1:name};${0}",
         "description": "module.exports"
     },
     "module exports object": {
         "prefix": "meo",
-        "body": "module.exports = {\n\t${1:member}\n};",
+        "body": "module.exports = {\n\t${1:member}\n};${0}",
         "description": "module exports object"
     },
     "event handler": {
@@ -433,48 +433,48 @@
     // Console
     "console.log": {
         "prefix": "cl",
-        "body": "console.log(${0});",
+        "body": "console.log(${1});${0}",
         "description": "console.log"
     },
     "console.error": {
         "prefix": "ce",
-        "body": "console.error(${0});",
+        "body": "console.error(${1});${0}",
         "description": "console.error"
     },
     "console.warn": {
         "prefix": "cw",
-        "body": "console.warn(${0});",
+        "body": "console.warn(${1});${0}",
         "description": "console.warn"
     },
     "console.log labeled": {
         "prefix": "cll",
-        "body": "console.log('${0}', ${0});",
+        "body": "console.log('${1}', ${1});${0}",
         "description": "console.log labeled"
     },
     "console.error labeled": {
         "prefix": "cel",
-        "body": "console.error('${0}', ${0});",
+        "body": "console.error('${1}', ${1});${0}",
         "description": "console.error labeled"
     },
     "console.warn labeled": {
         "prefix": "cwl",
-        "body": "console.warn('${0}', ${0});",
+        "body": "console.warn('${1}', ${1});${0}",
         "description": "console.warn labeled"
     },
     // Timers
     "setTimeout": {
         "prefix": "st",
-        "body": "setTimeout(() => {\n\t${0}\n}, ${1:delay});",
+        "body": "setTimeout((${2}) => {\n\t${0}\n}, ${1:delay});",
         "description": "setTimeout"
     },
     "setInterval": {
         "prefix": "si",
-        "body": "setInterval(() => {\n\t${0}\n}, ${1:delay});",
+        "body": "setInterval((${2}) => {\n\t${0}\n}, ${1:delay});",
         "description": "setInterval"
     },
     "setImmediate": {
         "prefix": "sim",
-        "body": "setImmediate(() => {\n\t${0}\n});",
+        "body": "setImmediate((${2}) => {\n\t${0}\n}${1});",
         "description": "setImmediate"
     },
     "process nextTick": {
