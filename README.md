@@ -6,7 +6,7 @@
 
 ## Setup
 
-Just install this package from the Extension Marketplace, then make sure to add `"editor.snippetSuggestions": "top"` to your user settings to see these snippets on top in the suggestion popover.
+Just install this package from the [Extension Marketplace](https://marketplace.visualstudio.com/VSCode), then make sure to add `"editor.snippetSuggestions": "top"` to your user settings to see these snippets on top in the suggestion popover.
 
 ## Snippets
 
