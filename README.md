@@ -636,3 +636,7 @@ process.nextTick(() => {
 ```javascript
 'use strict';
 ```
+
+## Sponsorship 🎗
+
+If you found this project useful, please consider becoming a [sponsor on GitHub](https://github.com/sponsors/nathanchapman).
