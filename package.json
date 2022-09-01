@@ -1,6 +1,6 @@
 {
   "name": "javascriptsnippets",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "description": "Visual Studio Code snippets for JavaScript, TypeScript, and React",
   "author": "Nathan Chapman <nathanchapman@duck.com> (http://nathanchapman.io)",
