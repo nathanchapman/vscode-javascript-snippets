@@ -1,7 +1,7 @@
 # ✂️ vscode-javascript-snippets
 
 [![Version](https://img.shields.io/vscode-marketplace/v/nathanchapman.javascriptsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.javascriptsnippets)
-[![Downloads](https://img.shields.io/vscode-marketplace/d/nathanchapman.javascriptsnippets.svg)](vscode:extension/nathanchapman.javascriptsnippets)
+![Downloads](https://img.shields.io/vscode-marketplace/d/nathanchapman.javascriptsnippets.svg)
 [![Rating](https://img.shields.io/vscode-marketplace/r/nathanchapman.javascriptsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.javascriptsnippets&ssr=false#review-details)
 
 > Visual Studio Code snippets for JavaScript, TypeScript, and React
@@ -90,7 +90,7 @@ else {
 }
 ```
 
-##### `ife⇥` if/else statement
+##### `ifel⇥` if/else statement
 
 ```javascript
 if (${1:condition}) {
@@ -100,7 +100,7 @@ if (${1:condition}) {
 }
 ```
 
-##### `ei⇥` else if statement
+##### `elif⇥` else if statement
 
 ```javascript
 else if (${1:condition}) {

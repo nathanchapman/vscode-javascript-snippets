@@ -19,6 +19,9 @@
   "contributes": {
     "snippets": [
       {
+        "path": "./snippets/global.code-snippets"
+      },
+      {
         "language": "javascript",
         "path": "./snippets/js.code-snippets"
       },
