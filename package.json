@@ -1,39 +1,39 @@
 {
-    "name": "JavaScriptSnippets",
-    "description": "JavaScript (ES6) code snippets for VS Code",
-    "version": "0.2.0",
-    "displayName": "JavaScript Snippets",
-    "publisher": "nathanchapman",
-    "icon": "images/javascript.png",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nathanchapman/vscode-javascript-snippets"
-    },
-    "engines": {
-        "vscode": "0.10.x"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "javascriptsnippets",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "Visual Studio Code snippets for JavaScript, TypeScript, and React",
+  "author": "Nathan Chapman <nathanchapman@duck.com> (http://nathanchapman.io)",
+  "publisher": "nathanchapman",
+  "displayName": "JavaScript Snippets",
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+  "repository": "github:nathanchapman/vscode-javascript-snippets",
+  "bugs": "https://github.com/nathanchapman/vscode-javascript-snippets/issues",
+  "homepage": "https://github.com/nathanchapman/vscode-javascript-snippets#readme",
+  "engines": {
+    "vscode": "^1.x.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/ts.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/tsx.json"
+      }
+    ]
+  }
 }
