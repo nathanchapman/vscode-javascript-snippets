@@ -473,5 +473,71 @@
     "prefix": "us",
     "body": "'use strict'",
     "description": "insert 'use strict' statement"
+  },
+  "component static prop types": {
+    "prefix": "propTypes",
+    "body": "static propTypes = {$0}",
+    "description": "Component Static Prop Types"
+  },
+  "component static default props": {
+    "prefix": "defaultProps",
+    "body": "static defaultProps: Partial<${1:${TM_FILENAME_BASE}Props}> = {$0}"
+  },
+  "component static get derived state from props": {
+    "prefix": "getDerivedStateFromProps",
+    "body": "static getDerivedStateFromProps(${1:nextProps}: ${3:${TM_FILENAME_BASE}${2:Props}}, ${4:prevState}: ${6:${TM_FILENAME_BASE}${5:State}}): Partial<${6:${TM_FILENAME_BASE}${5:State}}> {$0}"
+  },
+  "component set state": {
+    "prefix": "setState",
+    "body": "this.setState($1)$0"
+  },
+  "component constructor": {
+    "prefix": "constructor",
+    "body": [
+      "constructor(${1:props}: ${3:${TM_FILENAME_BASE}${2:Props}}) {",
+      "\tsuper(${1:props})",
+      "",
+      "\t$4",
+      "}"
+    ]
+  },
+  "component will mount": {
+    "prefix": "componentWillMount",
+    "body": "componentWillMount() {$0}",
+    "description": "DEPRECATION WARNING [v16.3]: Use `componentDidMount` instead."
+  },
+  "component did mount": {
+    "prefix": "componentDidMount",
+    "body": "componentDidMount() {$0}"
+  },
+  "component will receive props": {
+    "prefix": "componentWillReceiveProps",
+    "body": "componentWillReceiveProps(${1:nextProps}: ${3:${TM_FILENAME_BASE}${2:Props}}) {$0}",
+    "description": "DEPRECATION WARNING [v16.3]: Use `static getDerivedStateFromProps` instead."
+  },
+  "should component update": {
+    "prefix": "shouldComponentUpdate",
+    "body": "shouldComponentUpdate(${1:nextProps}: ${3:${TM_FILENAME_BASE}${2:Props}}, ${4:nextState}: ${6:${TM_FILENAME_BASE}${5:State}}) {$0}"
+  },
+  "component will update": {
+    "prefix": "componentWillUpdate",
+    "body": "componentWillUpdate(${1:nextProps}: ${3:${TM_FILENAME_BASE}${2:Props}}, ${4:nextState}: ${6:${TM_FILENAME_BASE}${5:State}}) {$0}",
+    "description": "DEPRECATION WARNING [v16.3]: Use `componentDidUpdate` instead."
+  },
+  "component did update": {
+    "prefix": "componentDidUpdate",
+    "body": "componentDidUpdate(${1:nextProps}: ${3:${TM_FILENAME_BASE}${2:Props}}, ${4:nextState}: ${6:${TM_FILENAME_BASE}${5:State}}) {$0}"
+  },
+  "component will unmount": {
+    "prefix": "componentWillUnmount",
+    "body": "componentWillUnmount() {$0}"
+  },
+  "component did catch": {
+    "prefix": "componentDidCatch",
+    "body": "componentDidCatch(${1:error}: Error, ${2:errorInfo}: React.ErrorInfo) {$0}"
+  },
+  "component render": {
+    "prefix": "render",
+    "body": ["render() {", "\treturn ($0)", "}"]
   }
 }
