@@ -33,7 +33,7 @@ var ${0}
 ##### `v=⇥` var assignment
 
 ```javascript
-var ${1:name} = ${2:value};
+var ${1:name} = ${2:value}
 ```
 
 ##### `l⇥` let statement
@@ -45,13 +45,13 @@ let ${0}
 ##### `l=⇥` let assignment
 
 ```javascript
-let ${1:name} = ${2:value};
+let ${1:name} = ${2:value}
 ```
 
 ##### `dl=⇥` destructuring let assignment
 
 ```javascript
-let {${1:name}} = ${2:value};
+let {${1:name}} = ${2:value}
 ```
 
 ##### `co⇥` const statement
@@ -63,13 +63,13 @@ const ${0}
 ##### `co=⇥` const assignment
 
 ```javascript
-const ${1:name} = ${2:value};
+const ${1:name} = ${2:value}
 ```
 
 ##### `dco=⇥` destructuring const assignment
 
 ```javascript
-const {${1:name}} = ${2:value};
+const {${1:name}} = ${2:value}
 ```
 
 #### Flow Control
@@ -754,4 +754,38 @@ process.nextTick(() => {
 
 ```javascript
 'use strict'
+```
+
+#### React (JS)
+
+##### `propTypes⇥`
+
+```javascript
+static propTypes = {$0}
+```
+
+##### `defaultProps⇥`
+
+```javascript
+static defaultProps = {$0}
+```
+
+##### `getDerivedStateFromProps⇥`
+
+```javascript
+static getDerivedStateFromProps(${1:nextProps}, ${2:prevState}) {$0}
+```
+
+#### React (TS)
+
+##### `defaultProps⇥`
+
+```typescript
+static defaultProps: Partial<${1:${TM_FILENAME_BASE}Props}> = {$0}
+```
+
+##### `getDerivedStateFromProps⇥`
+
+```typescript
+static getDerivedStateFromProps(${1:nextProps}: ${3:${TM_FILENAME_BASE}${2:Props}}, ${4:prevState}: ${6:${TM_FILENAME_BASE}${5:State}}): Partial<${6:${TM_FILENAME_BASE}${5:State}}> {$0}
 ```
