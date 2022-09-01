@@ -1,4 +1,4 @@
-# vscode-javascript-snippets
+# ✂️ vscode-javascript-snippets
 
 [![Version](https://img.shields.io/vscode-marketplace/v/nathanchapman.javascriptsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.javascriptsnippets)
 [![Downloads](https://img.shields.io/vscode-marketplace/d/nathanchapman.javascriptsnippets.svg)](vscode:extension/nathanchapman.javascriptsnippets)
