@@ -6,7 +6,7 @@
   "author": "Nathan Chapman <nathanchapman@duck.com> (http://nathanchapman.io)",
   "publisher": "nathanchapman",
   "displayName": "JavaScript Snippets",
-  "icon": "images/javascript.png",
+  "icon": "media/javascript.png",
   "repository": "github:nathanchapman/vscode-javascript-snippets",
   "bugs": "https://github.com/nathanchapman/vscode-javascript-snippets/issues",
   "homepage": "https://github.com/nathanchapman/vscode-javascript-snippets#readme",
