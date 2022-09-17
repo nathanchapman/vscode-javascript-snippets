@@ -1,7 +1,7 @@
 # ✂️ vscode-javascript-snippets
 
 [![Version](https://img.shields.io/vscode-marketplace/v/nathanchapman.javascriptsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.javascriptsnippets)
-![Downloads](https://img.shields.io/vscode-marketplace/d/nathanchapman.javascriptsnippets.svg)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/nathanchapman.javascriptsnippets)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.javascriptsnippets)
 [![Rating](https://img.shields.io/vscode-marketplace/r/nathanchapman.javascriptsnippets.svg)](https://marketplace.visualstudio.com/items?itemName=nathanchapman.javascriptsnippets&ssr=false#review-details)
 
 > Visual Studio Code snippets for JavaScript, TypeScript, and React
